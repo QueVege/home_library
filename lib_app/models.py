@@ -12,7 +12,7 @@ class Author(models.Model):
     name = models.CharField(max_length=300)
     pen_name = models.CharField(max_length=300)
     year_birth = models.IntegerField()
-    year_death = models.IntegerField(null=True)
+    year_death = models.IntegerField(blank=True, null=True)
     genres = models.ManyToManyField(Genre)
     country = models.CharField(max_length=100)
     photo = models.ImageField(upload_to="authors/")
@@ -43,4 +43,4 @@ class Book(models.Model):
     cover = models.ImageField(upload_to="books_covers/")
 
     def __str__(self):
-        return f"{self.name} book"
+        return f"{self.title} book"
