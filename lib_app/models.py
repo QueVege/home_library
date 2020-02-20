@@ -21,6 +21,10 @@ class Author(models.Model):
     def __str__(self):
         return f"{self.pen_name} ({self.name})"
 
+    @property
+    def sorted_book_set(self):
+        return self.book_set.order_by("year")
+
 
 class Publisher(models.Model):
     name = models.CharField(max_length=200)
