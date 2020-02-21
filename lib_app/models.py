@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Max
 
 
 class Genre(models.Model):
@@ -35,7 +36,10 @@ class Publisher(models.Model):
 
 
 class Book(models.Model):
-    authors = models.ManyToManyField(Author)
+    class Meta:
+        ordering = ["id"]
+
+    authors = models.ManyToManyField(Author, through="BookAuthors",)
     pages = models.IntegerField()
     year = models.IntegerField()
     publisher = models.ForeignKey(
@@ -48,3 +52,23 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title} book"
+
+
+class BookAuthors(models.Model):
+    class Meta:
+        ordering = ["order"]
+        unique_together = (
+            # ('book', 'order'),
+            ("book", "author")
+        )
+
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0, editable=False)
+
+    def save(self, *args, **kwargs):
+        if BookAuthors.objects.filter(book=self.book).count():
+            self.order = (
+                BookAuthors.objects.filter(book=self.book).latest("order").order + 1
+            )
+        return super().save(*args, **kwargs)

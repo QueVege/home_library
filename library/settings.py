@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "lib_app",
     "django_filters",
+    "star_ratings",
 ]
 
 MIDDLEWARE = [
@@ -89,7 +90,7 @@ DATABASES = {
 
 # Fixtures
 
-FIXTURE_DIRS = (os.path.join(BASE_DIR, "fixtures"),)
+FIXTURE_DIRS = os.path.join(BASE_DIR, "fixtures")
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -125,3 +126,9 @@ STATIC_URL = "/static/"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+# Stars rating
+
+STAR_RATINGS_RANGE = 10
+STAR_RATINGS_ANONYMOUS = True
