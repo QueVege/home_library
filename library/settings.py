@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "lib_app",
     "django_filters",
-    "star_ratings",
+    "crispy_forms",
+    "widget_tweaks",
 ]
 
 MIDDLEWARE = [
@@ -127,8 +128,4 @@ STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-
-# Stars rating
-
-STAR_RATINGS_RANGE = 10
-STAR_RATINGS_ANONYMOUS = True
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

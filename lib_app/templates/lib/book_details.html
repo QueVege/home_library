@@ -1,0 +1,27 @@
+{% extends 'lib/base.html' %}
+
+{% block content %}
+  <h2>{{ book.title }}</h2>
+  <img src="{{ book.cover.url }}" height="300">
+  <p>{{ book.year }}</p>
+  <p>Authors:</p>
+  <ul>
+    {% for author in book.authors.all %}
+      <li>
+          <p>{{ author.pen_name }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>Genres:</p>
+  <ul>
+    {% for genre in book.genres.all %}
+      <li>
+          <p>{{ genre.name }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>Pages: {{ book.pages }}</p>
+  <p>Publisher: {{ book.publisher.name }}</p>
+  <p>Description:</p>
+  <p>{{ book.description|linebreaksbr }}</p>
+{% endblock %}

@@ -10,17 +10,18 @@ class Genre(models.Model):
 
 
 class Author(models.Model):
-    name = models.CharField(max_length=300)
-    pen_name = models.CharField(max_length=300)
-    year_birth = models.IntegerField()
-    year_death = models.IntegerField(blank=True, null=True)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    pen_name = models.CharField(max_length=200)
+    year_birth = models.PositiveIntegerField()
+    year_death = models.PositiveIntegerField(blank=True, null=True)
     genres = models.ManyToManyField(Genre)
     country = models.CharField(max_length=100)
     photo = models.ImageField(upload_to="authors/")
-    biography = models.TextField(max_length=1000)
+    biography = models.TextField(max_length=5000)
 
     def __str__(self):
-        return f"{self.pen_name} ({self.name})"
+        return f"{self.pen_name} ({self.first_name} {self.last_name})"
 
     @property
     def sorted_book_set(self):
@@ -40,14 +41,14 @@ class Book(models.Model):
         ordering = ["id"]
 
     authors = models.ManyToManyField(Author, through="BookAuthors",)
-    pages = models.IntegerField()
-    year = models.IntegerField()
+    pages = models.PositiveIntegerField()
+    year = models.PositiveIntegerField()
     publisher = models.ForeignKey(
         Publisher, related_name="books", on_delete=models.CASCADE
     )
     genres = models.ManyToManyField(Genre)
     title = models.CharField(max_length=300)
-    description = models.TextField(max_length=1000)
+    description = models.TextField(max_length=3000)
     cover = models.ImageField(upload_to="books_covers/")
 
     def __str__(self):
@@ -58,7 +59,6 @@ class BookAuthors(models.Model):
     class Meta:
         ordering = ["order"]
         unique_together = (
-            # ('book', 'order'),
             ("book", "author")
         )
 

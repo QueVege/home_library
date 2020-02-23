@@ -4,3 +4,5 @@ psycopg2-binary==2.8.4
 pre-commit==2.1.0
 django-filter
 django-star-ratings
+django-crispy-forms
+django-widget-tweaks

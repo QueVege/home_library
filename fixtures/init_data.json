@@ -1,1 +1,1621 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "lib_app", "model": "author"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "lib_app", "model": "genre"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "lib_app", "model": "publisher"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "lib_app", "model": "book"}}, {"model": "sessions.session", "pk": "4piqwzp1kkd5k8zacx7gqvhtfkswb74i", "fields": {"session_data": "NWY1YTBmNGY2M2RmYTlkM2M5ZjJkM2FmZmQ4Yzk2NWZlOGJjMWFiZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MDk5MTNmNGY0YzI5OGIxNTAyZmZkNGUwZjY3NGI2NDY3Zjg5ZWRjIn0=", "expire_date": "2020-03-05T07:03:22.622Z"}}, {"model": "sessions.session", "pk": "uiem9q2fiqcy6bde6x4umuym50svqx2c", "fields": {"session_data": "NWY1YTBmNGY2M2RmYTlkM2M5ZjJkM2FmZmQ4Yzk2NWZlOGJjMWFiZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MDk5MTNmNGY0YzI5OGIxNTAyZmZkNGUwZjY3NGI2NDY3Zjg5ZWRjIn0=", "expire_date": "2020-03-05T07:55:31.954Z"}}, {"model": "lib_app.genre", "pk": 2, "fields": {"name": "Mystery"}}, {"model": "lib_app.genre", "pk": 3, "fields": {"name": "Horror"}}, {"model": "lib_app.genre", "pk": 5, "fields": {"name": "Classic"}}, {"model": "lib_app.genre", "pk": 7, "fields": {"name": "Thriller"}}, {"model": "lib_app.genre", "pk": 8, "fields": {"name": "Detective"}}, {"model": "lib_app.genre", "pk": 9, "fields": {"name": "Fantasy"}}, {"model": "lib_app.author", "pk": 1, "fields": {"name": "First Author", "pen_name": "fauth", "year_birth": 1947, "year_death": null, "country": "USA", "photo": "authors/first.jpeg", "biography": "First Author's biography", "genres": [2, 3, 7]}}, {"model": "lib_app.author", "pk": 2, "fields": {"name": "Second Author", "pen_name": "sauth", "year_birth": 1899, "year_death": 1961, "country": "USA", "photo": "authors/second.jpeg", "biography": "Second Author's biography", "genres": [5]}}, {"model": "lib_app.author", "pk": 3, "fields": {"name": "Third Author", "pen_name": "tauth", "year_birth": 1954, "year_death": null, "country": "UK", "photo": "authors/third.jpeg", "biography": "Third Authors biography", "genres": [7, 8]}}, {"model": "lib_app.author", "pk": 4, "fields": {"name": "Fourth Author", "pen_name": "foauth", "year_birth": 1965, "year_death": null, "country": "UK", "photo": "authors/fourth.jpeg", "biography": "Fourth Author's biography", "genres": [9]}}, {"model": "lib_app.publisher", "pk": 1, "fields": {"name": "FirstPublisher", "country": "USA"}}, {"model": "lib_app.publisher", "pk": 2, "fields": {"name": "SecondPublisher", "country": "UK"}}, {"model": "lib_app.book", "pk": 2, "fields": {"pages": 675, "year": 2000, "publisher": 1, "title": "FirstBook", "description": "FirstBook's description", "cover": "books_covers/1_EQmSjGL.jpeg", "authors": [1], "genres": [2, 3, 7]}}, {"model": "lib_app.book", "pk": 3, "fields": {"pages": 654, "year": 1999, "publisher": 2, "title": "SecondBook", "description": "SecondBook's description", "cover": "books_covers/2.jpeg", "authors": [1, 3], "genres": [7]}}, {"model": "lib_app.book", "pk": 4, "fields": {"pages": 767, "year": 2007, "publisher": 2, "title": "ThirdBook", "description": "ThirdBook's description", "cover": "books_covers/3.jpeg", "authors": [4], "genres": [2, 9]}}, {"model": "lib_app.book", "pk": 5, "fields": {"pages": 453, "year": 1936, "publisher": 1, "title": "FourthBook", "description": "FourthBook's description", "cover": "books_covers/4.jpeg", "authors": [2], "genres": [5]}}, {"model": "lib_app.book", "pk": 6, "fields": {"pages": 453, "year": 1942, "publisher": 1, "title": "FifthBook", "description": "FifthBook's description", "cover": "books_covers/5.jpeg", "authors": [2], "genres": [5]}}, {"model": "lib_app.book", "pk": 7, "fields": {"pages": 765, "year": 2012, "publisher": 2, "title": "SixthBook", "description": "SixthBook's description", "cover": "books_covers/6.jpeg", "authors": [3], "genres": [2, 3, 7, 8]}}, {"model": "lib_app.book", "pk": 8, "fields": {"pages": 548, "year": 2010, "publisher": 2, "title": "SeventhBook", "description": "SeventhBook's description", "cover": "books_covers/7.jpeg", "authors": [3], "genres": [7, 8]}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add author", "content_type": 7, "codename": "add_author"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change author", "content_type": 7, "codename": "change_author"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete author", "content_type": 7, "codename": "delete_author"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view author", "content_type": 7, "codename": "view_author"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add genre", "content_type": 8, "codename": "add_genre"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change genre", "content_type": 8, "codename": "change_genre"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete genre", "content_type": 8, "codename": "delete_genre"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view genre", "content_type": 8, "codename": "view_genre"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add publisher", "content_type": 9, "codename": "add_publisher"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change publisher", "content_type": 9, "codename": "change_publisher"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete publisher", "content_type": 9, "codename": "delete_publisher"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view publisher", "content_type": 9, "codename": "view_publisher"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add book", "content_type": 10, "codename": "add_book"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change book", "content_type": 10, "codename": "change_book"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete book", "content_type": 10, "codename": "delete_book"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view book", "content_type": 10, "codename": "view_book"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$180000$VHI74UCRNB0r$l9BoqitrSBDj0HfMWUqz72JwQ7+NnNdRNk+Vb9GWm2o=", "last_login": "2020-02-20T07:55:31.953Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2020-02-20T07:03:11.100Z", "groups": [], "user_permissions": []}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2020-02-20T07:06:32.178Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "Non-fiction genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2020-02-20T07:06:39.140Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "Mystery genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2020-02-20T07:06:42.876Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "Horror genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2020-02-20T07:06:47.791Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "Humor genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2020-02-20T07:06:54.250Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "Classic genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2020-02-20T07:07:09.183Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "Fantasy genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2020-02-20T07:07:24.742Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "FirstPublisher from USA", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2020-02-20T07:07:33.699Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "SecondPublisher from UK", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2020-02-20T07:09:41.045Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "fauth (First Author)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2020-02-20T07:11:20.269Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "sauth (Second Author)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2020-02-20T07:15:18.873Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "Thriller genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2020-02-20T07:15:23.599Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "Detective genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2020-02-20T07:15:44.147Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "Fantasy genre", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2020-02-20T07:15:44.149Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "Humor genre", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2020-02-20T07:15:44.151Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "Non-fiction genre", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2020-02-20T07:16:33.917Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "Fantasy genre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2020-02-20T07:17:47.944Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "tauth (Third Author)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2020-02-20T07:18:41.298Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "foauth (Fourth Author)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2020-02-20T07:19:29.955Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "fauth (First Author)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Genres\"]}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2020-02-20T07:25:51.073Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "FirstBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2020-02-20T07:26:41.876Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "SecondBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2020-02-20T07:27:32.315Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "ThirdBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2020-02-20T07:28:52.818Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "FourthBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2020-02-20T07:29:28.474Z", "user": 1, "content_type": 10, "object_id": "6", "object_repr": "FifthBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2020-02-20T07:31:06.313Z", "user": 1, "content_type": 10, "object_id": "7", "object_repr": "SixthBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2020-02-20T07:32:04.592Z", "user": 1, "content_type": 10, "object_id": "8", "object_repr": "SeventhBook book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}]
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "lib_app",
+    "model": "author"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "lib_app",
+    "model": "book"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "lib_app",
+    "model": "genre"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "lib_app",
+    "model": "publisher"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "lib_app",
+    "model": "bookauthors"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "omjf578kg673hkr4e0j1ykuz3gov2v0a",
+  "fields": {
+    "session_data": "NTczYjVlYjA4MjY5ZWE1MTA1MjJmZWM5ZDE5MTc0ZDkwZmMyMWUxMDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MjkzN2Q3ODNmMGI5ODIyZmU2YzExOGZmNzY5ZmVhNDljZmY2YWZkIn0=",
+    "expire_date": "2020-03-07T19:44:29.027Z"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Fantasy"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Humor"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Satire"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Science-fiction"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Children's"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Adventure"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Detective"
+  }
+},
+{
+  "model": "lib_app.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Novel"
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 1,
+  "fields": {
+    "first_name": "John Ronald Reuel",
+    "last_name": "Tolkien",
+    "pen_name": "J. R. R. Tolkien",
+    "year_birth": 1892,
+    "year_death": 1973,
+    "country": "UK",
+    "photo": "authors/Tolkien.jpg",
+    "biography": "J.R.R. Tolkien was an English fantasy author and academic. Tolkien settled in England as a child, going on to study at Exeter College. While teaching at Oxford University, he published the popular fantasy novels The Hobbit and The Lord of the Rings trilogy. The works have had a devoted international fan base and been adapted into award-winning blockbuster films.\r\nEarly Life and Family\r\nJohn Ronald Reuel Tolkien was born in Bloemfontein, South Africa, on January 3, 1892, to Arthur Tolkien and Mabel Suffield Tolkien. After Arthur died from complications of rheumatic fever, Mabel settled with four-year-old Tolkien and his younger brother, Hilary, in the country hamlet of Sarehole, in Birmingham, England.\r\nMabel died in 1904, and the Tolkien brothers were sent to live with a relative and in boarding homes, with a Catholic priest assuming guardianship in Birmingham. Tolkien went on to get his first-class degree at Exeter College, specializing in Anglo-Saxon and Germanic languages and classic l",
+    "genres": [
+      2
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 2,
+  "fields": {
+    "first_name": "Terence David John",
+    "last_name": "Pratchett",
+    "pen_name": "Terry Pratchett",
+    "year_birth": 1948,
+    "year_death": 2015,
+    "country": "UK",
+    "photo": "authors/Pratchett.jpg",
+    "biography": "Terry Pratchett, in full Sir Terence David John Pratchett, (born April 28, 1948, Beaconsfield, Buckinghamshire, England\u2014died March 12, 2015, near Salisbury, Wiltshire), English author, predominantly of humorous fantasy and science fiction, best known for his Discworld series.\r\nPratchett was raised in Buckinghamshire, the son of an engineer and a secretary. He became enamoured with science fiction and fantasy at a young age and published his first story, \u201cThe Hades Business,\u201d in a school magazine in 1961. The story was published commercially two years later in Science Fantasy magazine. At age 17 Pratchett left school in order to pursue a career in journalism. About this time he began working on his first novel, The Carpet People, which was published in 1971 (it was heavily revised and republished in 1992). The lighthearted tale, aimed at children, centres on the exploits of two brothers who live inside a carpet and battle the evil concept of Fray.\r\nPratchett continued to work in newspaper journalism and then in public relations throughout the 1970s and most of the \u201980s. He published two more stand-alone novels, The Dark Side of the Sun (1976) and Strata (1981), before the first book in his Discworld series, The Colour of Magic, was published in 1983. The series continued with The Light Fantastic (1986), which was quickly followed by Equal Rites (1986) and Mort (1987). In 1987 Pratchett left his office job to become a full-time writer.\r\nPratchett\u2019s Discworld series, a collection of satirical fantasy novels set on a disc-shaped world that rests on the backs of four giant elephants atop a humongous turtle, proved wildly popular worldwide, and he published one or more nearly every year into the early 21st century. The series also spawned video games, plays, television adaptations, and several supplemental volumes, including books of maps of the Discworld. While the bulk of the series was aimed at an adult audience, it was also popular with children, and Pratchett penned several novels that were set on the Discworld and aimed specifically at a younger audience.\r\nIn addition to those in the Discworld universe, Pratchett published several other novels for children, notably the Bromeliad trilogy (1989\u201390), about four-inch-high aliens living on Earth, and the Johnny Maxwell trilogy (1992\u201396), about a young video game aficionado who finds himself in fantastic situations. Dodger (2012) relays the adventures of a young man in Victorian London, where he encounters a Dickensian array of characters\u2014among them Charles Dickens himself. The Long Earth (2012; with Stephen Baxter) and The Long War (2013; also with Baxter) concern the ramifications of the discovery that humans can access numerous parallel Earths. Dragons at Crumbling Castle (2014) was a collection of comic children\u2019s stories about a young boy\u2019s attempts to defeat a group of dragons.\r\nIn 2007 Pratchett was diagnosed with posterior cortical atrophy, a variant of early-onset Alzheimer disease. He subsequently became an outspoken advocate for Alzheimer research and awareness, donating $1 million to the cause and appearing in a 2009 BBC documentary about his life with the disease. Although his illness affected his ability to read and write, Pratchett continued to regularly publish books, and in 2010 he became an adjunct professor of English at the University of Dublin. A Slip of the Keyboard (2014) amalgamated some of his earlier nonfiction writings with musings on his Alzheimer diagnosis and invectives about contemporary social ills. He died in 2015, and his final Discworld book, The Shepherd\u2019s Crown, was published later that year. In 2017, as per Pratchett\u2019s wishes, his uncompleted works were destroyed\u2014his computer hard drive, which contained as many as 10 unfinished novels, was smashed by a steamroller and then run through a stone crusher.\r\nPratchett was the recipient of numerous honours and awards for his work. He was appointed an Officer of the Order of the British Empire (OBE) in 1998 and was knighted in 2009.",
+    "genres": [
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 3,
+  "fields": {
+    "first_name": "Jerome",
+    "last_name": "Klapka",
+    "pen_name": "Jerome K. Jerome",
+    "year_birth": 1859,
+    "year_death": 1927,
+    "country": "UK",
+    "photo": "authors/Klapka.jpg",
+    "biography": "Jerome K. Jerome, in full Jerome Klapka Jerome, (born May 2, 1859, Walsall, Staffordshire, Eng.\u2014died June 14, 1927, Northampton, Northamptonshire), English novelist and playwright whose humour\u2014warm, unsatirical, and unintellectual\u2014won him wide following.\r\nJerome left school at the age of 14, working first as a railway clerk, then as a schoolteacher, an actor, and a journalist. His first book, On the Stage\u2014and Off, was published in 1885, but it was with the publication of his next books, The Idle Thoughts of an Idle Fellow (1886) and Three Men in a Boat (1889), that he achieved great success; both books were widely translated. From 1892 to 1897 he was a coeditor (with Robert Barr and George Brown Burgin) of The Idler, a monthly magazine that he had helped found, which featured contributions by writers such as Eden Phillpotts, Mark Twain, and Bret Harte.\r\nJerome\u2019s many other works include Three Men on the Bummel (1900) and Paul Kelver (1902), an autobiographical novel. He also wrote a number of plays. A book of Jerome\u2019s memoirs, My Life and Times, was published in 1926.",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 4,
+  "fields": {
+    "first_name": "Arthur",
+    "last_name": "Hailey",
+    "pen_name": "Arthur Hailey",
+    "year_birth": 1920,
+    "year_death": 2004,
+    "country": "UK",
+    "photo": "authors/Hailey.jpg",
+    "biography": "Arthur Hailey, British-born writer (born April 5, 1920, Luton, Bedfordshire, Eng.\u2014died Nov. 24, 2004, Lyford Cay, New Providence Island, Bahamas), helped launch the disaster-movie genre when his novel Airport (1968) was made into a motion picture in 1970. Hailey\u2019s meticulously researched 11 books\u2014among them Hotel (1965; filmed 1967, filmed for television 1983, and adapted as a TV series 1983\u201388), Wheels (1971; filmed as a TV miniseries 1978), Strong Medicine (1984; filmed for TV 1986), and The Moneychangers (1975; TV miniseries 1976)\u2014were published in 40 countries in 38 languages and sold more than 170 million copies. His 1956 screenplay Flight into Danger eventually became the inspiration for the disaster-film spoof Airplane! (1980).",
+    "genres": [
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 5,
+  "fields": {
+    "first_name": "Charles Lutwidge",
+    "last_name": "Dodgson",
+    "pen_name": "Lewis Carroll",
+    "year_birth": 1832,
+    "year_death": 1898,
+    "country": "UK",
+    "photo": "authors/Carroll.jpg",
+    "biography": "Lewis Carroll was the pen name of Charles L. Dodgson, author of the children's classics 'Alice's Adventures in Wonderland' and 'Through the Looking-Glass.'\r\nLewis Carroll was an English fiction writer who wrote and created games as a child. At age 20, he received a studentship at Christ Church and was appointed a lecturer in mathematics. Carroll was shy but enjoyed creating stories for children. His most famous books include Alice's Adventures in Wonderland and Through the Looking-Glass.\r\nCharles Lutwidge Dodgson, best known by his pseudonym, Lewis Carroll, was born in the village of Daresbury, England, on January 27, 1832. The eldest boy in a family of 11 children, Carroll was rather adept at entertaining himself and his siblings. His father, a clergyman, raised them in the rectory. As a boy, Carroll excelled in mathematics and won many academic prizes. At age 20, he was awarded a studentship (called a scholarship in other colleges) to Christ College. Apart from serving as a lecturer in mathematics, he was an avid photographer and wrote essays, political pamphlets and poetry. \"The Hunting of the Snark\" displays his wonderful ability in the genre of literary nonsense.\r\nCarroll suffered from a bad stammer, but he found himself vocally fluent when speaking with children. The relationships he had with young people in his adult years are of great interest, as they undoubtedly inspired his best-known writings and have been a point of disturbing speculation over the years. Carroll loved to entertain children, and it was Alice, the daughter of Henry George Liddell, who can be credited with his pinnacle inspiration. Alice Liddell remembers spending many hours with Carroll, sitting on his couch while he told fantastic tales of dream worlds. During an afternoon picnic with Alice and her two sisters, Carroll told the first iteration of what would later become Alice's Adventures in Wonderland. When Alice arrived home, she exclaimed that he must write the story down for her.\r\nHe fulfilled the small girl's request, and through a series of coincidences, the story fell into the hands of the novelist Henry Kingsley, who urged Carroll to publish it. The book Alice's Adventures in Wonderland was released in 1865. It gained steady popularity, and as a result, Carroll wrote the sequel, Through the Looking-Glass and What Alice Found There (1871). By the time of his death, Alice had become the most popular children's book in England, and by 1932, it was one of the most popular in the world.\r\nBesides writing, Carroll created a number of fine photographs. His notable portraits include those of the actress Ellen Terry and the poet Alfred Tennyson. He also photographed children in every possible costume and situation, eventually making nude studies of them. Despite conjecture, little real evidence of child abuse can be brought against him. Shortly before his 66th birthday, Carroll caught a severe case of influenza, which led to pneumonia. He died on January 14, 1898, leaving an enigma behind him.",
+    "genres": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 6,
+  "fields": {
+    "first_name": "Arthur Ignatius Conan",
+    "last_name": "Doyle",
+    "pen_name": "Arthur Conan Doyle",
+    "year_birth": 1859,
+    "year_death": 1930,
+    "country": "UK",
+    "photo": "authors/Doyle.jpg",
+    "biography": "Author Arthur Conan Doyle wrote 60 mystery stories featuring the wildly popular detective character Sherlock Holmes and his loyal assistant Watson.\r\nOn May 22, 1859, Arthur Conan Doyle was born to an affluent, strict Irish-Catholic family in Edinburgh, Scotland. Although Doyle's family was well-respected in the art world, his father, Charles, who was a life-long alcoholic, had few accomplishments to speak of. Doyle's mother, Mary, was a lively and well-educated woman who loved to read. She particularly delighted in telling her young son outlandish stories. Her great enthusiasm and animation while spinning wild tales sparked the child's imagination. As Doyle would later recall in his biography, \"In my early childhood, as far as I can remember anything at all, the vivid stories she would tell me stand out so clearly that they obscure the real facts of my life.\"\r\nAt the age of 9, Doyle bid a tearful goodbye to his parents and was shipped off to England, where he would attend Hodder Place, Stonyhurst\u2014a Jesuit preparatory school\u2014from 1868 to 1870. Doyle then went on to study at Stonyhurst College for the next five years. For Doyle, the boarding-school experience was brutal: many of his classmates bullied him, and the school practiced ruthless corporal punishment against its students. Over time, Doyle found solace in his flair for storytelling, and developed an eager audience of younger students.\r\nWhen Doyle graduated from Stonyhurst College in 1876, his parents expected that he would follow in his family's footsteps and study art, so they were surprised when he decided to pursue a medical degree at the University of Edinburgh instead. At med school, Doyle met his mentor, Professor Dr. Joseph Bell, whose keen powers of observation would later inspire Doyle to create his famed fictional detective character, Sherlock Holmes. At the University of Edinburgh, Doyle also had the good fortune to meet classmates and future fellow authors James Barrie and Robert Louis Stevenson. While a medical student, Doyle took his own first stab at writing, with a short story called The Mystery of Sasassa Valley. That was followed by a second story, The American Tale, which was published in London Society.\r\nIn 1886, newly married and still struggling to make it as an author, Doyle started writing the mystery novel A Tangled Skein. Two years later, the novel was renamed A Study in Scarlet and published in Beeton's Christmas Annual. A Study in Scarlet, which first introduced the wildly popular characters Detective Sherlock Holmes and his assistant, Watson, finally earned Doyle the recognition he had so desired. It was the first of 60 stories that Doyle would pen about Sherlock Holmes over the course of his writing career. Also, in 1887, Doyle submitted two letters about his conversion to Spiritualism to a weekly periodical called Light.\r\nDoyle continued to actively participate in the Spiritualist movement from 1887 to 1916, during which time he wrote three books that experts consider largely autobiographical. These include Beyond the City (1893), The Stark Munro Letters (1895) and A Duet with an Occasional Chorus (1899). Upon achieving success as a writer, Doyle decided to retire from medicine. Throughout this period, he additionally produced a handful of historical novels including one about the Napoleonic Era called The Great Shadow in 1892, and his most famous historical novel, Rodney Stone, in 1896.\r\nThe prolific author also composed four of his most popular Sherlock Holmes books during the 1890s and early 1900s: The Sign of Four (1890), The Adventures of Sherlock Holmes (1892), The Memoirs of Sherlock Holmes (1894) and The Hound of Baskervilles, published in 1901. In 1893, to Doyle's readers' disdain, he had attempted to kill off his Sherlock Holmes character in order to focus more on writing about Spiritualism. In 1901, however, Doyle reintroduced Sherlock Holmes in The Hound of Baskervilles and later brought him back to life in The Adventure of the Empty House so the lucrative character could earn Doyle the money to fund his missionary work. Doyle also strove to spread his faith through a series of written works, consisting of The New Revolution (1918), The Vital Message (1919), The Wanderings of a Spiritualist (1921) and History of Spiritualism (1926).\r\nIn 1928, Doyle's final twelve stories about Sherlock Holmes were published in a compilation entitled The Casebook of Sherlock Holmes.\r\nHaving recently been diagnosed with Angina Pectoris, Doyle stubbornly ignored his doctor's warnings, and in the fall of 1929, embarked on a spiritualism tour through the Netherlands. He returned home with chest pains so severe that he needed to be carried on shore, and was thereafter almost entirely bedridden at his home in Crowborough, England. Rising one last time on July 7, 1930, Doyle collapsed and died in his garden while clutching his heart with one hand and holding a flower in the other.",
+    "genres": [
+      2,
+      5,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 7,
+  "fields": {
+    "first_name": "Iehiel-Leyb Arnoldovich",
+    "last_name": "Faynzilberg",
+    "pen_name": "Ilya Ilf",
+    "year_birth": 1897,
+    "year_death": 1937,
+    "country": "Soviet Union",
+    "photo": "authors/Ilf.jpg",
+    "biography": "His father was a Jewish bank clerk. He graduated from a technical school in 1913 and held various positions, including time at the telephone company and a military plant. After the Revolution, he began working as a journalist, editing several humor magazines, and joined the Odessa Union of Poets.\r\nIn 1923, he relocated to Moscow and took employment at the newspaper Gudok (roughly \"Beep\", also a type of stringed instrument), a publication for railway workers. His contributions consisted mostly of satirical pieces. It was there that he met his writing partner, Petrov. In 1928, they were both let go, due to staff reductions, but they were able to find work at Chudak, a literary journal that provided a start for many Soviet writers and artists. From 1932 to 1937, they also wrote pieces for major publications such as Pravda, Literaturnaya Gazeta and Krokodil. Ilf also had a passion for photography, but this was not fully appreciated until years after his death, when his daughter discovered his photograph albums.\r\nIlf had been diagnosed with tuberculosis in the 1920s. He thought it was in remission, but he was diagnosed with it again during his trip to America, and he died not long after returning. Days later, a Nazi propaganda newspaper, Der Angriff, published an article claiming that Ilf committed suicide following a scathing critique from the Soviet government during a writers' convention. Petrov immediately published a denial in Pravda called \"An Answer to Fascist Slanderers\", pointing out that his death was caused by illness and that nothing extraordinary happened during the convention, with a full transcript of the proceedings. However, the suicide version is still used by some Western biographers.",
+    "genres": [
+      3,
+      4,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 8,
+  "fields": {
+    "first_name": "Yevgeny Petrovich",
+    "last_name": "Katayev",
+    "pen_name": "Yevgeny Petrov",
+    "year_birth": 1902,
+    "year_death": 1942,
+    "country": "Soviet Union",
+    "photo": "authors/Petrov.jpg",
+    "biography": "Following Germany's invasion of the Soviet Union, Petrov became a war correspondent. He was killed in a plane crash while returning from besieged Sevastopol. The short film Envelope was dedicated to him.\r\nHe was the brother of Valentin Katayev.",
+    "genres": [
+      3,
+      4,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.author",
+  "pk": 9,
+  "fields": {
+    "first_name": "Neil Richard MacKinnon",
+    "last_name": "Gaiman",
+    "pen_name": "Neil Gaiman",
+    "year_birth": 1960,
+    "year_death": null,
+    "country": "UK",
+    "photo": "authors/Gaiman.jpg",
+    "biography": "Gaiman grew up in Sussex and attended Whitgift School in Croydon. Upon graduating, he worked as a freelance journalist before earning his first author credit for a paperback biography of the pop music group Duran Duran in 1984. While the subject matter was certainly not indicative of his later work, its success was, and the first printing sold out in a matter of days. It was about that time that he met artist Dave McKean, and the two collaborated on the graphic novel Violent Cases (1987). The work established them as rising stars in the comic world, and soon the two were noticed by publishers on both sides of the Atlantic. They submitted story and art treatments to DC Comics, and the result was Black Orchid (1988), a miniseries that helped establish the atmosphere for the DC renaissance of the late 1980s. Along with Alan Moore\u2019s work on Watchmen (1986\u201387) and Swamp Thing (1983\u201387) and Frank Miller\u2019s gritty interpretation of Batman in The Dark Knight Returns (1986), the success of Black Orchid showed that a market existed for dark mature stories written for an adult audience. That became even clearer with the launch of The Sandman in 1989.\r\nThe Sandman was a completely new kind of comic, and it became one of the flagship titles for Vertigo, a line of adult-themed horror and fantasy series launched by DC in 1993. While McKean stayed on as cover artist for the book\u2019s entire run, a rotating series of interior artists helped flavour each individual story arc. In addition, the stories were unlike any previously seen in mainstream comics. The protagonist was Morpheus, the manifestation of the ability of sentient beings to dream. Like many other pantheons, the Endless\u2014Morpheus\u2019s siblings\u2014were godlike beings with human foibles and drives. A typical story was so littered with literary allusions and historical references that Internet fan sites soon began offering detailed annotations of individual issues. By the time the series ended in 1996, The Sandman had captured an enviable list of awards and was DC Comics\u2019 top-selling title. Gaiman also topped best-seller lists with his novels Good Omens (with Terry Pratchett, 1990), Neverwhere (1996), Stardust (1999; film 2007), and American Gods (2001) and with his children\u2019s book Coraline (2002; film 2009). He revisited the Sandman characters in 2003 with Endless Nights, an anthology that had the distinction of being the first graphic novel to earn a place on The New York Times best-seller list for hardcover fiction.\r\nIn 2004 Gaiman penned 1602 for Marvel Comics. The story reinterpreted classic Marvel superheroes and marked Gaiman\u2019s first foray into the superhero genre since his run on the critically acclaimed but legally troubled Marvelman (known in the United States as Miracleman) in the early 1990s. Fittingly, the proceeds from 1602, one of that year\u2019s best-selling comics, were used to finance Gaiman\u2019s ultimately successful effort to free Marvelman from the copyright issues that had entangled it since 1998. The following year he reunited with McKean for the visually stunning film MirrorMask, and they collaborated on The Wolves in the Walls, an illustrated horror story for children. Anansi Boys (2006) revisited some of the characters introduced in American Gods, and it debuted at the top of The New York Times best-seller list. InterWorld (2007; with Michael Reaves) was a young-adult novel centred on a teenager who can travel between different versions of Earth and must deal with magical forces seeking to control them. The story had initially been conceived as a television show but was never picked up. Two sequels, The Silver Dream (2013) and Eternity\u2019s Wheel (2015), were conceptualized by Gaiman and Reaves and written by Reaves and his daughter Mallory.\r\nIn 2009 Gaiman received the Newbery Medal for his distinguished contribution to literature for children for The Graveyard Book (2008), the macabre yet sweet tale of an orphan raised by a cemetery full of ghosts. In the ostensibly adult novel The Ocean at the End of the Lane (2013), a man reflects on a series of supernatural traumas sustained during his childhood. One of Gaiman\u2019s most personal works, it was voted Specsavers Book of the Year by readers in the United Kingdom. Gaiman returned to the Sandman mythos for the first time in a decade with The Sandman: Overture (2013\u201315), a lushly illustrated limited series that featured art by J.H. Williams III and a story that explored the events that took place prior to the first Sandman tale. Trigger Warning: Short Fictions and Disturbances (2015) was a collection of brief tales, many of which referenced or sprung from the work of other authors and artists. In 2017 Gaiman offered a novel interpretation of Norse myths in Norse Mythology, while Bryan Fuller and Michael Green brought a lush, critically acclaimed adaptation of American Gods to the Starz cable network. Gaiman later adapted Good Omens as a miniseries that premiered on Amazon in 2019.",
+    "genres": [
+      2,
+      5,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 1,
+  "fields": {
+    "name": "Northwestern University Press",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 2,
+  "fields": {
+    "name": "Bantam Classics",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 3,
+  "fields": {
+    "name": "Ishi Press",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 4,
+  "fields": {
+    "name": "Barnes & Noble",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 5,
+  "fields": {
+    "name": "Rupa & Co",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 6,
+  "fields": {
+    "name": "Tor Classics",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 7,
+  "fields": {
+    "name": "Headline",
+    "country": "UK"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 8,
+  "fields": {
+    "name": "Mariner Books",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.publisher",
+  "pk": 9,
+  "fields": {
+    "name": "William Morrow",
+    "country": "USA"
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 1,
+  "fields": {
+    "pages": 574,
+    "year": 2011,
+    "publisher": 1,
+    "title": "The Twelve Chairs",
+    "description": "More faithful to the original text and its deeply resonant humor, this new translation of The Twelve Chairs brings Ilf and Petrov\u2019s Russian classic fully to life. The novel\u2019s iconic hero, Ostap Bender, an unemployed con artist living by his wits, joins forces with Ippolit Matveyevich Vorobyaninov, a former nobleman who has returned to his hometown to look for a cache of missing jewels hidden in chairs that have been appropriated by the Soviet authorities. The search for the chairs takes them from the provinces of Moscow to the wilds of the Transcaucasus mountains. On their quest they encounter a variety of characters, from opportunistic Soviet bureaucrats to aging survivors of the old propertied classes, each one more selfish, venal, and bungling than the last. A brilliant satire of the early years of the Soviet Union, as well as the inspiration for a Mel Brooks film, The Twelve Chairs retains its universal appeal.",
+    "cover": "books_covers/12chairs.jpg",
+    "genres": [
+      3,
+      4,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 2,
+  "fields": {
+    "pages": 272,
+    "year": 1984,
+    "publisher": 2,
+    "title": "Alice's Adventures in Wonderland & Through the Looking-Glass",
+    "description": "In 1862 Charles Lutwidge Dodgson, a shy Oxford mathematician with a stammer, created a story about a little girl tumbling down a rabbit hole. Thus began the immortal adventures of Alice, perhaps the most popular heroine in English literature.\r\nCountless scholars have tried to define the charm of the Alice books\u2014with those wonderfully eccentric characters the Queen of Hearts, Tweedledum, and Tweedledee, the Cheshire Cat, Mock Turtle, the Mad Hatter et al.\u2014by proclaiming that they really comprise a satire on language, a political allegory, a parody of Victorian children\u2019s literature, even a reflection of contemporary ecclesiastical history.\r\nPerhaps, as Dodgson might have said, Alice is no more than a dream, a fairy tale about the trials and tribulations of growing up\u2014or down, or all turned round\u2014as seen through the expert eyes of a child.",
+    "cover": "books_covers/Alice.jpeg",
+    "genres": [
+      2,
+      6,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 3,
+  "fields": {
+    "pages": 448,
+    "year": 2015,
+    "publisher": 3,
+    "title": "Airport",
+    "description": "This is a fictional story - fast paced, exciting, richly textured with memorable characters. Yet we think you will find it more than a story. It is about your airport too. Yet those with inside knowledge - like Mel Bakersfield, the airports career-jinxed general manager - are aware of grave deficiencies. Operational areas are out molded to the point of danger; air traffic control is overtaxed; the supposedly modern glass chrome main terminal has become a whited sepulcher. Against this background is set a dramatic, behind the scenes story of seven eventful airport hours during a mid-winter snowstorm - with pressures passions and problems of their own - who share them. You will meet Joe Patroni, cocky and genial airline maintenance chief, striving to clear a disabled aircraft from an urgently needed runway; Air Traffic Controller Keith Bakersfeld suffering stress and conscience stricken by the memory of an air disaster for which he was responsible; Tanya Livingston passenger relations agent (an attractive divorcee) whose suspicions triggered by a sharp-eyed customs inspector, reveal an unsuspected crisis; Captain (and check pilot) Vernon Demerest, arrogant admired by women and despising \"ground bound pigeons,\" especially Airport Commissioners; Elliot Freemantle, crusading lawyer, leading a group of home-owners incensed by airport noise; Gwen Meighen, a hot-tempered English brunette from \"Stewardess Row\"; Ada Quonsett, an old lady who explains her techniques as an aerial stowaway; D. O. Guerrero, a psychotic with a homemade bomb. Arthur Hailey has employed the same multi-plot technique which he used successfully in Hotel and The Final Diagnosis. As usual, he has written an engrossing enjoyable tale, packed with little known and fascinating information: How, for example, smugglers trip themselves up with customs; how to get free drinks on economy flights; the way in which stewardess pregnancy programs work; what is an airport \"Conga Line\"; how much an airline will pay on the spot for a damaged luggage claim; and why airport insurance booths are hated by airline pilots . But the true hero of this novel is the airport itself viewed through the eyes of a master story teller.",
+    "cover": "books_covers/Airport.jpg",
+    "genres": [
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 4,
+  "fields": {
+    "pages": 1136,
+    "year": 2018,
+    "publisher": 4,
+    "title": "The Complete Sherlock Holmes",
+    "description": "A master of deductive reasoning who can solve the most difficult crimes by spotting obscure clues overlooked by others, dilettante sleuth Sherlock Holmes was the hero of sixty stories written by Sir Arthur Conan Doyle between 1887 and 1927. With the help of his loyal friend, Doctor Watson, Holmes brought countless crooks, thieves, swindlers, and murderers to justice. He even rose from the dead after Doyle tried to dispatch him in his twenty-fourth adventure, and readers protested. Here, in one volume, are all four full-length novels and fifty-six short stories about the colourful adventures of Sherlock Holmes--every word Sir Arthur Conan Doyle ever wrote about Baker Street's most famous resident. Also included is an introduction by lifetime Sherlockians Barbara and Christopher Roden. The Complete Sherlock Holmes is one of Barnes & Noble's Leatherbound Classics. Each volume features authoritative texts by the world's greatest authors in an exquisitely designed bonded-leather binding, with distinctive gilt edging and a silk-ribbon bookmark. Decorative, durable, and collectible, these books offer hours of pleasure to readers young and old and are an indispensable cornerstone for every home library.",
+    "cover": "books_covers/Sherlock.jpg",
+    "genres": [
+      8
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 5,
+  "fields": {
+    "pages": 412,
+    "year": 2008,
+    "publisher": 5,
+    "title": "Hotel",
+    "description": "Through the suites and foyers of the St. Gregory Hotel in New Orleans move a host of vividly drawn characters - the hotel industry tycoons, the guests, the staff, men and women, young and old, the totally dedicated, the utterly amoral. There is robbery and blackmail, a near-disastrous orgy, a take-over battle and a love story that you will never forget. 'Catches the reader by his lapels and pulls him through to the last page.",
+    "cover": "books_covers/Hotel.jpg",
+    "genres": [
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 6,
+  "fields": {
+    "pages": 256,
+    "year": 2001,
+    "publisher": 6,
+    "title": "Three Men in a Boat: To Say Nothing of the Dog",
+    "description": "\"I had the general symptoms, the chief among them being a disinclination to work of any kind.\"\r\nSo begin the hilarious misadventures of a merry, but scandalously lazy band of well-to-do young men-and a plucky and rather world-weary fox terrier named Montmorency-on an idyllic cruise along the River Thames. Feeling seedy, muses one of them dreamily, \"What we want is rest.\" What they find instead is one hapless catastrophe after another. Soggy weather, humiliating dunkings, the irritating behavior of small boats and the \"contrariness of teakettles\" are just a few of the barbarisms our genteel heroes are forced to endure. But which a delighted reader can only sing, Hooray!\r\nFirst published in 1889, Three Men in a Boat was an instant success, and Jerome has been compared to comic master P.G. Wodehouse.",
+    "cover": "books_covers/Three_men_in_a_boat.jpg",
+    "genres": [
+      3,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 7,
+  "fields": {
+    "pages": 465,
+    "year": 2001,
+    "publisher": 7,
+    "title": "American Gods",
+    "description": "A storm is coming...Locked behind bars for three years, Shadow did his time, quietly waiting for the magic day when he could return to Eagle Point, Indiana. A man no longer scared of what tomorrow might bring, all he wanted was to be with Laura, theMoreA storm is coming...Locked behind bars for three years, Shadow did his time, quietly waiting for the magic day when he could return to Eagle Point, Indiana. A man no longer scared of what tomorrow might bring, all he wanted was to be with Laura, the wife he deeply loved, and start a new life.But just days before his release, Laura and Shadow\u2019s best friend are killed in an accident. With his life in pieces and nothing to keep him tethered, Shadow accepts a job from a beguiling stranger he meets on the way home, an enigmatic man who calls himself Mr. Wednesday. A trickster and rogue, Wednesday seems to know more about Shadow than Shadow does himself.Life as Wednesday\u2019s bodyguard, driver, and errand boy is far more interesting and dangerous than Shadow ever imagined\u2014it is a job that takes him on a dark and strange road trip and introduces him to a host of eccentric characters whose fates are mysteriously intertwined with his own. Along the way Shadow will learn that the past never dies- that everyone, including his beloved Laura, harbors secrets- and that dreams, totems, legends, and myths are more real than we know. Ultimately, he will discover that beneath the placid surface of everyday life a storm is brewing\u2014an epic war for the very soul of America\u2014and that he is standing squarely in its path.",
+    "cover": "books_covers/American_gods.jpg",
+    "genres": [
+      2,
+      9
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 8,
+  "fields": {
+    "pages": 1178,
+    "year": 2005,
+    "publisher": 8,
+    "title": "The Lord of the Rings",
+    "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\r\nIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.\r\nFrom Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings to him, but always he searched for the One Ring that would complete his dominion.\r\nWhen Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom.\r\nThe Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider.\r\nThis new edition includes the fiftieth-anniversary fully corrected text setting and, for the first time, an extensive new index.\r\nJ.R.R. Tolkien (1892-1973), beloved throughout the world as the creator of The Hobbit, The Lord of the Rings, and The Silmarillion, was a professor of Anglo-Saxon at Oxford, a fellow of Pembroke College, and a fellow of Merton College until his retirement in 1959. His chief interest was the linguistic aspects of the early English written tradition, but while he studied classic works of the past, he was creating a set of his own.",
+    "cover": "books_covers/The_lord_of_the_rings.jpg",
+    "genres": [
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 9,
+  "fields": {
+    "pages": 320,
+    "year": 1999,
+    "publisher": 8,
+    "title": "The Hobbit: or There and Back Again",
+    "description": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy.\r\nBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\r\nWritten for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+    "cover": "books_covers/The_Hobbit.jpg",
+    "genres": [
+      2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "lib_app.book",
+  "pk": 10,
+  "fields": {
+    "pages": 400,
+    "year": 2006,
+    "publisher": 9,
+    "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "description": "According to The Nice and Accurate Prophecies of Agnes Nutter, Witch (the world's only completely accurate book of prophecies, written in 1655, before she exploded), the world will end on a Saturday. Next Saturday, in fact. Just before dinner.\r\nSo the armies of Good and Evil are amassing, Atlantis is rising, frogs are falling, tempers are flaring. Everything appears to be going according to Divine Plan. Except a somewhat fussy angel and a fast-living demon\u2014both of whom have lived amongst Earth's mortals since The Beginning and have grown rather fond of the lifestyle\u2014are not actually looking forward to the coming Rapture.\r\nAnd someone seems to have misplaced the Antichrist...",
+    "cover": "books_covers/Good_Omens.jpg",
+    "genres": [
+      2,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 1,
+  "fields": {
+    "book": 1,
+    "author": 7,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 2,
+  "fields": {
+    "book": 1,
+    "author": 8,
+    "order": 1
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 3,
+  "fields": {
+    "book": 2,
+    "author": 5,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 4,
+  "fields": {
+    "book": 3,
+    "author": 4,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 5,
+  "fields": {
+    "book": 4,
+    "author": 6,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 6,
+  "fields": {
+    "book": 5,
+    "author": 4,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 7,
+  "fields": {
+    "book": 6,
+    "author": 3,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 8,
+  "fields": {
+    "book": 7,
+    "author": 9,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 9,
+  "fields": {
+    "book": 8,
+    "author": 1,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 10,
+  "fields": {
+    "book": 9,
+    "author": 1,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 11,
+  "fields": {
+    "book": 10,
+    "author": 2,
+    "order": 0
+  }
+},
+{
+  "model": "lib_app.bookauthors",
+  "pk": 12,
+  "fields": {
+    "book": 10,
+    "author": 9,
+    "order": 1
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add author",
+    "content_type": 7,
+    "codename": "add_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change author",
+    "content_type": 7,
+    "codename": "change_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete author",
+    "content_type": 7,
+    "codename": "delete_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view author",
+    "content_type": 7,
+    "codename": "view_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add book",
+    "content_type": 8,
+    "codename": "add_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change book",
+    "content_type": 8,
+    "codename": "change_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete book",
+    "content_type": 8,
+    "codename": "delete_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view book",
+    "content_type": 8,
+    "codename": "view_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add genre",
+    "content_type": 9,
+    "codename": "add_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change genre",
+    "content_type": 9,
+    "codename": "change_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete genre",
+    "content_type": 9,
+    "codename": "delete_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view genre",
+    "content_type": 9,
+    "codename": "view_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add publisher",
+    "content_type": 10,
+    "codename": "add_publisher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change publisher",
+    "content_type": 10,
+    "codename": "change_publisher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete publisher",
+    "content_type": 10,
+    "codename": "delete_publisher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view publisher",
+    "content_type": 10,
+    "codename": "view_publisher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add book authors",
+    "content_type": 11,
+    "codename": "add_bookauthors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change book authors",
+    "content_type": 11,
+    "codename": "change_bookauthors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete book authors",
+    "content_type": 11,
+    "codename": "delete_bookauthors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view book authors",
+    "content_type": 11,
+    "codename": "view_bookauthors"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$xBiWh0Rgvvzw$VXiV5GA3GMjbMJGjJHEDT0SE7qySqkPiNnNKBeJr3Yc=",
+    "last_login": "2020-02-22T19:44:29.015Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-02-22T19:43:58.885Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2020-02-22T19:46:41.203Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Fantasy genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2020-02-22T19:46:50.944Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Fantasy genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2020-02-22T19:54:16.083Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "J. R. R. Tolkien (John Ronald Reuel Tolkien)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2020-02-22T19:54:57.994Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Fantasy genre",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2020-02-22T19:56:27.529Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Humor genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2020-02-22T19:57:11.364Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Satire genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2020-02-22T19:57:21.676Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Science-fiction genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2020-02-22T19:57:45.961Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Children's genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2020-02-22T19:58:15.294Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Adventure genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2020-02-22T19:58:22.815Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Detective genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2020-02-22T20:11:07.620Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "J. R. R. Tolkien (John Ronald Reuel Tolkien)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2020-02-22T20:11:15.636Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "J. R. R. Tolkien (John Ronald Reuel Tolkien)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2020-02-22T20:15:18.461Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Terry Pratchett (Terence David John Pratchett)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2020-02-22T20:22:16.585Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Jerome K. Jerome (Jerome Klapka)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2020-02-22T20:25:52.548Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Novel genre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2020-02-22T20:26:36.877Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Arthur Hailey (Arthur Hailey)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2020-02-22T20:30:01.133Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Lewis Carroll (Charles Lutwidge Dodgson)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2020-02-22T20:34:57.122Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Arthur Conan Doyle (Arthur Ignatius Conan Doyle)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2020-02-22T20:37:30.335Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Ilya Ilf (Iehiel-Leyb Arnoldovich Faynzilberg)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2020-02-22T20:42:03.025Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Yevgeny Petrov (Yevgeny Petrovich Katayev)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2020-02-22T20:42:14.172Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Ilya Ilf (Iehiel-Leyb Arnoldovich Faynzilberg)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Country\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2020-02-22T21:19:48.659Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Neil Gaiman (Neil Richard MacKinnon Gaiman)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2020-02-22T21:24:27.025Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Northwestern University Press from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2020-02-22T21:25:09.870Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "The Twelve Chairs book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (1)\"}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (2)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2020-02-22T21:30:33.593Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "The Twelve Chairs book",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Year\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2020-02-22T21:32:09.723Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Bantam Classics from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2020-02-22T21:34:15.491Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Alice's Adventures in Wonderland & Through the Looking-Glass book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (3)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2020-02-23T07:42:28.732Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Ishi Press from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2020-02-23T07:42:44.802Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Airport book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2020-02-23T07:48:10.801Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Barnes & Noble from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2020-02-23T07:51:00.961Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "The Complete Sherlock Holmes book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (5)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2020-02-23T07:55:09.175Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Rupa & Co from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2020-02-23T07:58:13.553Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Hotel book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (6)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2020-02-23T08:00:08.335Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Tor Classics from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2020-02-23T08:00:20.760Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Three Men in a Boat: To Say Nothing of the Dog book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (7)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2020-02-23T08:05:50.728Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Headline from UK",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2020-02-23T08:06:11.669Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "American Gods book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (8)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2020-02-23T08:24:18.846Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Mariner Books from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2020-02-23T08:25:02.418Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "The Lord of the Rings book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (9)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2020-02-23T08:38:05.243Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "The Hobbit: or There and Back Again book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (10)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2020-02-23T08:45:37.169Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "William Morrow from USA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2020-02-23T08:48:51.443Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (11)\"}}, {\"added\": {\"name\": \"book authors\", \"object\": \"BookAuthors object (12)\"}}]"
+  }
+}
+]

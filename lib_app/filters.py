@@ -20,13 +20,15 @@ class CustomOrderingFilter(django_filters.OrderingFilter):
 
 class BookFilter(django_filters.FilterSet):
 
-    ordering = CustomOrderingFilter(fields=(("year", "year"), ("title", "title"),))
+    title = django_filters.CharFilter(lookup_expr='icontains', label='Title')
+    year__gt = django_filters.NumberFilter(field_name='year', lookup_expr='gt', label='From')
+    year__lt = django_filters.NumberFilter(field_name='year', lookup_expr='lt', label='To')
+    authors = django_filters.CharFilter(field_name='authors__last_name', lookup_expr='icontains', label='Author')
+    publisher = django_filters.CharFilter(field_name='publisher__name', lookup_expr='icontains', label='Publisher')
+
+
+    # ordering = CustomOrderingFilter(fields=(("year", "year"), ("title", "title"),))
 
     class Meta:
         model = Book
-        fields = {
-            "year": ["lt", "gt"],
-            "title": ["icontains"],
-            "authors__name": ["icontains"],
-            "publisher__name": ["icontains"],
-        }
+        fields = []

@@ -1,0 +1,76 @@
+{% extends 'lib/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+
+<form method="get">
+    <div class="well">
+      <h4 style="margin-top: 0">Filter</h4>
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.title.label_tag }}
+          {% render_field filter.form.title class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.year__gt.label_tag }}
+          {% render_field filter.form.year__gt class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.year__lt.label_tag }}
+          {% render_field filter.form.year__lt class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.authors.label_tag }}
+          {% render_field filter.form.authors class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+            {{ filter.form.publisher.label_tag }}
+            {% render_field filter.form.publisher class="form-control" %}
+          </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>
+  </form>
+
+  {% if books %}
+
+    <ul>
+      {% for book in filter.qs %}
+
+        <li>
+
+          <a href="{% url 'lib:book-details' book.id %}"><h3>{{ book.title }}</h3></a>
+          <p>{{ book.year }}</p>
+          <p>Authors:</p>
+          <ul>
+            {% for author in book.authors.all %}
+              <li>
+                  <p>{{ author.pen_name }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+          <p>Genres:</p>
+          <ul>
+            {% for genre in book.genres.all|slice:"0:3" %}
+              <li>
+                  <p>{{ genre.name }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </li>
+
+      {% endfor %}
+    </ul>
+
+  {% else %}
+
+    <p>No books</p>
+
+  {% endif %}
+
+{% endblock %}
